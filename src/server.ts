@@ -8,9 +8,10 @@ app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
+app.use(express.static(path.join(__dirname, 'app')));
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'app/index.html'));
-  });
+    res.sendFile(path.join(__dirname, 'app/home.html'));
+});
 app.use('/api', router)
 
 export default app
