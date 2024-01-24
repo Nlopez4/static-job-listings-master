@@ -12,8 +12,7 @@ header {
     h1 {
         font-family: 'Playfair Display', serif;
         color:  hsl(240, 100%, 5%);
-        /* font-size: 36px; */
-        font-size: clamp(1rem, 4vw, 2rem);
+        font-size: clamp(1.5rem, 4vw, 2rem);
         text-align: left;
 
         span {
@@ -64,8 +63,28 @@ header {
         display: none;
     }
 }
+#left-container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
 
-@media (max-width: 789px) {
+    :first-child {
+        flex: 3;
+    }
+    :nth-child(2){
+        flex: 3;
+    }
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        color:  hsl(240, 100%, 5%);
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        font-weight: 800;
+    }
+}
+@media (max-width: 992px) {
     body {
        padding: 0 30px; 
     }
@@ -79,6 +98,7 @@ header {
         display: none;
     }
     #info-container {
+        display: block;
         #block-img-mobile {
             display: block;
             width: 100%;
@@ -86,6 +106,10 @@ header {
             object-fit: cover;
             object-position: bottom;
         }
+    }
+    #left-container-info {
+        display: block;
+        width: 100%;
     }
 }
 @media only screen and (min-width: 992px) {
