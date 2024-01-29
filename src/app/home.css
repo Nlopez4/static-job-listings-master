@@ -50,8 +50,9 @@ header {
 #info-container{
     display: flex;
     flex-direction: row;
-    justify-content: normal;
-    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* align-items: center; */
 }
 
 #left-container {
@@ -84,6 +85,19 @@ header {
         font-weight: 800;
     }
 }
+#right-container {
+    max-width: 500px;
+    height: auto;
+    background-color: black;
+    padding: 20px 30px;
+
+    h1 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+}
 @media (max-width: 992px) {
     body {
        padding: 0 30px; 
@@ -110,6 +124,7 @@ header {
     #left-container-info {
         display: block;
         width: 100%;
+        padding-bottom: 50px;
     }
 }
 @media only screen and (min-width: 992px) {
