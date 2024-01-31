@@ -3,58 +3,59 @@ body {
     margin: 0;
     padding: 2rem 5rem;
 }
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    h1 {
-        font-family: 'Playfair Display', serif;
-        color:  hsl(240, 100%, 5%);
-        font-size: clamp(1.5rem, 4vw, 2rem);
-        text-align: left;
-
-        span {
-            font-style: italic;
-        }
-    }
-    ul {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    li {
-        list-style: none;
-    }
-
-    a {
-        color: hsl(233, 8%, 79%);
-        font-family: 'Fanwood Text', serif;
-        font-size: 20px;
-        text-decoration: none;
-    }
-}
-.noShow {
-    display: none;
-}
 #main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1280px;
     p {
         font-family: 'Fanwood Text', serif;
         font-size: 20px;
         text-align: left;
     }
-}
+    .noShow {
+        display: none;
+    }
+    #nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color:  hsl(240, 100%, 5%);
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            text-align: left;
+    
+            span {
+                font-style: italic;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+    
+        li {
+            list-style: none;
+        }
+    
+        a {
+            color: hsl(233, 8%, 79%);
+            font-family: 'Fanwood Text', serif;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
 
+}
 #info-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-    /* align-items: center; */
 }
-
 #left-container {
     #block-img-desktop {
         width: 700px;
@@ -98,7 +99,7 @@ header {
         color: white;
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 1063px) {
     body {
        padding: 0 30px; 
     }
@@ -126,7 +127,5 @@ header {
         width: 100%;
         padding-bottom: 50px;
     }
-}
-@media only screen and (min-width: 992px) {
 }
 
