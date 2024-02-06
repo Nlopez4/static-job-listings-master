@@ -85,6 +85,10 @@ body {
         font-size: clamp(1.5rem, 4vw, 2rem);
         font-weight: 800;
     }
+
+    button {
+        background-color: hsl(35, 77%, 62%);
+    }
 }
 #right-container {
     max-width: 500px;
